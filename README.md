@@ -1,23 +1,28 @@
-To launch this web app perform the following steps:
+To launch this web app perform the following steps in a new terminal window:
 
-# Launches all of the infrastructure including the user-wishlist-app, postgres-SQL, reddis containers,
-# and a bridge network (see note below)
+1. Ensure that you have Docker and Docker Compose installed on your machine.
+
+Docker:
+https://docs.docker.com/get-docker/
+Docker Compose:
+https://docs.docker.com/compose/install/
+
+2. Clone this repository to your machine
+Linux/OS X:
+git clone https://github.com/shawndavidson/nclouds-docker-homework-4.git <folder>
+  
+cd <folder>
+  
+3. Navigate to the folder where its located and run the following command:
+
 docker-compose up
 
-Open a web browser to http://localhost:80
+Allow the web server to continue running while opening a web browser to http://localhost:80
 
-Note:
-I modified the docker-compose.yml to use the image from my DockerHub repo. However, if you want to build the image locally
-just uncomment line 4 and comment out line 5 as follows:
+When you're finished, press Ctrl-C in the terminal to shut down the application.
 
-docker-compose-yml:
-    build: ./
-    # image: skdavidson/user-wishlist-app
-
-# If you're building the dockerfile locally run this command BEFORE docker-compose up. 
-# Build the user-wishlist-app image 
-docker-compose build
-
+This project was a fork from cloudxlab/user-wishlist-app (see below)
+  
 Source: 
 - Git:      https://github.com/cloudxlab/user-wishlist-app
 - YouTube:  https://www.youtube.com/watch?v=ZTpEK3dEZVk

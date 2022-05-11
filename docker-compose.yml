@@ -1,7 +1,8 @@
 version: '3'
 services:
   web:
-    build: ./
+    # build: ./
+    image: skdavidson/user-wishlist-app
     environment:
       - PYTHONBUFFERED=1
     ports:

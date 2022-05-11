@@ -1,6 +1,7 @@
 version: '3'
 services:
   web:
+    # Uncomment build Dockerfile locally. Must also comment out image.
     # build: ./
     image: skdavidson/user-wishlist-app
     environment:
